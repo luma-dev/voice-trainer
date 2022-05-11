@@ -12,6 +12,3 @@ coverage/
 .next/
 out/
 build/
-/packages/eslint-config-*/**/*.d.ts
-
-/fail/*
