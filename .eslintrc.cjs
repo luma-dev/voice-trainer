@@ -6,5 +6,14 @@ const config = { __dirname };
 module.exports = {
   root: true,
   extends: ['@luma-dev/base', '@luma-dev/react'],
-  overrides: [...configureBase(config)],
+  overrides: [
+    ...configureBase(config),
+    {
+      files: '*.tsx',
+      rules: {
+        'jsx-a11y/media-has-caption': 'off',
+        'react/react-in-jsx-scope': 'off',
+      },
+    },
+  ],
 };
